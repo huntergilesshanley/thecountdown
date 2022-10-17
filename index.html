@@ -14,7 +14,7 @@ let count = 0;
 
 
 
-count=distance*((3000*0.07)/24/60/60/1000);
+count=distance*((6500*0.07)/24/60/60/1000);
 
 
 let text = "";
@@ -33,7 +33,7 @@ function delthe(){
 document.querySelector("#arena").innerHTML = document.querySelector("#arena").innerHTML.slice(0, -4);
 }
  showRemaining();
-   timer = setInterval(showRemaining, (1/(210/86400))*1000);
+   timer = setInterval(showRemaining, (1/((6500*0.07)/86400))*1000);
 </script>
 
 
