@@ -1,0 +1,45 @@
+<style>body,html{padding:0;margin:0;}</style>
+<div id="cont" style="    display: flex;
+    flex-direction: column-reverse;
+height:100%; overflow: scroll"><div id="arena"></div></div>
+<script>
+var end = new Date('12/3/2022 9:50 PM');
+
+    var timer;
+
+    function showRemaining() {
+let count = 0;
+        var now = new Date();
+        var distance = end - now;
+
+
+
+count=distance*((3000*0.07)/24/60/60/1000);
+
+
+let text = "";
+for(i=0;i<=count;i++){
+text+="the ";
+}
+for(i=0;i<=10;i++){
+text+="<br>";
+}
+document.querySelector("#arena").innerHTML = text;
+    }
+
+
+
+function delthe(){
+document.querySelector("#arena").innerHTML = document.querySelector("#arena").innerHTML.slice(0, -4);
+}
+ showRemaining();
+   timer = setInterval(showRemaining, (1/(210/86400))*1000);
+</script>
+
+
+
+
+
+
+
+
